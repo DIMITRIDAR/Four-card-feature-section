@@ -14,9 +14,12 @@ html {
 body {
   min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background: #fafafa;
+  padding-bottom: 2.5rem;
+  margin-top: 8.5rem;
 }
 
 .header h1 span {
@@ -24,6 +27,7 @@ body {
   font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: 0.0167rem;
+  margin-top: 8.5rem;
 }
 
 .header h1 {
@@ -35,53 +39,69 @@ body {
 }
 
 .header p {
-  width: 100%;
   color: #4d4f62;
+  text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 2.5rem;
   letter-spacing: 0.0104rem;
   opacity: 0.5;
   margin-top: 1.3rem;
-  text-align: center;
 }
 
-.container {
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 2.5rem;
-  width: 31.1rem;
-  padding: 2.8rem 2.7rem 2.8rem 11.8rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
-  position: relative;
+  margin-top: 7.6rem;
 }
 
-.container h2 {
+.card {
+  width: 31.1rem;
+  border-radius: 0.8rem;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  background: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card h2 {
   color: #4d4f62;
   font-size: 2rem;
   font-weight: 600;
   margin-top: 2.7rem;
 }
 
+.card p {
+  width: 25.4rem;
+  color: #4d4f62;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  letter-spacing: 0.009rem;
+  opacity: 0.5;
+}
+
 .logo {
   width: 5.7rem;
   height: 5.7rem;
   background-size: cover;
-  position: absolute;
-  top: 13.7rem;
+  position: relative;
   left: 22.6rem;
+  margin-bottom: 2.8rem;
+  margin-right: 2.8rem;
 }
 
 .hat {
   width: 31.1rem;
   height: 0.3552rem;
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
-  border-top-left-radius: 0.8rem;
   border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
 }
 
 .hat1 {
@@ -98,7 +118,4 @@ body {
 
 .hat4 {
   background: #549ef2;
-}
-
-@media only screen and(min-width:1440px) {
 }
