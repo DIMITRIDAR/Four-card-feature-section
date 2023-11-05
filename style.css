@@ -147,7 +147,8 @@ main {
   }
 
   .card {
-    width: 100%;
+    width: 35rem;
+    padding: 3.2rem 3.2rem 13.6rem;
   }
 
   .card p {
