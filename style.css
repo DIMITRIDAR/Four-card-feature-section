@@ -8,7 +8,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -19,7 +18,11 @@ body {
   flex-direction: column;
   background: #fafafa;
   padding-bottom: 2.5rem;
-  margin-top: 8.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 8.5rem 3.2rem 0;
 }
 
 .header h1 span {
@@ -27,7 +30,6 @@ body {
   font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: 0.0167rem;
-  margin-top: 8.5rem;
 }
 
 .header h1 {
@@ -57,10 +59,12 @@ main {
 }
 
 .card {
+  padding: 2.7rem 2.8rem 11.8rem;
   width: 31.1rem;
   border-radius: 0.8rem;
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
   background: #fff;
+  position: relative;
 }
 
 .wrapper {
@@ -73,7 +77,6 @@ main {
   color: #4d4f62;
   font-size: 2rem;
   font-weight: 600;
-  margin-top: 2.7rem;
 }
 
 .card p {
@@ -90,11 +93,9 @@ main {
 .logo {
   width: 5.7rem;
   height: 5.7rem;
-  background-size: cover;
-  position: relative;
-  left: 22.6rem;
-  margin-bottom: 2.8rem;
-  margin-right: 2.8rem;
+  right: 2.8rem;
+  bottom: 2.8rem;
+  position: absolute;
 }
 
 .hat {
@@ -103,6 +104,9 @@ main {
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
   border-top-right-radius: 0.8rem;
   border-top-left-radius: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hat1 {
@@ -119,4 +123,47 @@ main {
 
 .hat4 {
   background: #549ef2;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    padding-top: 8rem;
+  }
+
+  .header h1 span {
+    font-size: 3.6rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .header h1 {
+    font-size: 3.6rem;
+    letter-spacing: 0.025rem;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6.4rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card p {
+    width: 28.6rem;
+    margin-top: 0.6rem;
+  }
+
+  .logo {
+    width: 6.4rem;
+    height: 6.4rem;
+    right: 3.2rem;
+    bottom: 3.2rem;
+  }
+
+  .hat {
+    width: 35rem;
+    height: 0.4rem;
+  }
 }
